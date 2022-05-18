@@ -52,7 +52,7 @@ h1 {
     height:50px;
     line-height:50px;
     border-radius:25px;
-    background-color:#388bc5;
+    background-color:#da8d28;
     text-align:center;
     color:#FFF;
     font-size:22px;
@@ -61,7 +61,7 @@ h1 {
     transition:all ease .2s;
 }
 .pizza-item a:hover .pizza-item--add {
-    background-color:#244c88;
+    background-color:#b26d13;
 }
 .pizza-item--price {
     font-size:15px;
@@ -264,10 +264,10 @@ aside.show {
     cursor:pointer;
 }
 .pizzaInfo--size:hover {
-    background-color:#CCC;
+    background-color:#fed8a7;
 }
 .pizzaInfo--size.selected {
-    background-color:#399ade;
+    background-color:#da8d28;
     color:#FFF;
 }
 .pizzaInfo--size.selected span {
