@@ -47,3 +47,16 @@ pizzaJson.map((item, index)=>{
 
     c('.pizza-area').append(pizzaItem);
 });
+
+//eventos do PIZZA CARD TO BUY
+
+function closeModal(){
+    c('.pizzaWindowArea').style.opacity = 0;
+    setTimeout(()=>{
+    c('.pizzaWindowArea').style.display = 'none';
+    },200);
+}
+
+cs('.pizzaInfo--cancelButton, .pizzaInfo--cancelMobileButton').forEach((item)=>{
+    item.addEventListener('click', closeModal);
+})
