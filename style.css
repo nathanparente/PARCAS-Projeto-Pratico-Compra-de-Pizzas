@@ -9,57 +9,16 @@ body {
     margin:0;
     min-height:100vh;
 }
-.models {
-    display:none;
-}
-
-header {
-    position: fixed;
-    left:0;
-    top:0;
-    right:0;
-    height:60px;
-    background-color:#399ade;
-    display:none;
-    justify-content: flex-end;
-    align-items: center;
-}
-.menu-openner {
-    margin-right: 15px;
-    font-size: 26px;
-    background-color: #a9dcff;
-    padding: 5px 20px;
-    border-radius: 5px;
-}
-.menu-openner span {
-    margin-right:10px;
-}
-.menu-closer {
-    width:32px;
-    height:32px;
-    display:none;
-    font-size: 30px;
-}
-
-aside {
-    background-color:#9ccbe6;
-    width:0vw;
-    font-family:'Hepta Slab', Helvetica, Arial;
-    transition:all ease .2s;
-    overflow-x:hidden;
-}
-aside.show {
-    width:30vw;
-}
-.cart--area {
-    padding:20px;
-}
 main {
     flex:1;
     padding:20px;
 }
 h1 {
     font-family:'Hepta Slab', Helvetica, Arial;
+}
+/** PIZZA TEMPLATE =========================================================================================== */
+.models {
+    display:none;
 }
 .pizza-area {
     display:grid;
@@ -121,6 +80,118 @@ h1 {
     margin-top:10px;
 }
 
+/* MENU OPENER =============================================================================================== */
+header {
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    height:60px;
+    background-color:#399ade;
+    display:none;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu-openner {
+    margin-right: 15px;
+    font-size: 26px;
+    background-color: #a9dcff;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+.menu-openner span {
+    margin-right:10px;
+}
+.menu-closer {
+    width:32px;
+    height:32px;
+    display:none;
+    font-size: 30px;
+}
+
+/*CART AREA ================================================================================================= */
+aside {
+    background-color:#9ccbe6;
+    width:0vw;
+    font-family:'Hepta Slab', Helvetica, Arial;
+    transition:all ease .2s;
+    overflow-x:hidden;
+}
+aside.show {
+    width:30vw;
+}
+.cart--area {
+    padding:20px;
+}
+.cart {
+    margin-bottom:20px;
+}
+.cart--item {
+    display:flex;
+    align-items:center;
+    margin:10px 0;
+}
+.cart--item img {
+    width:40px;
+    height:40px;
+    margin-right:20px;
+}
+.cart--item-nome {
+    flex:1;
+}
+.cart--item--qtarea {
+    display:inline-flex;
+    background-color:#EEE;
+    border-radius:10px;
+    height:30px;
+}
+.cart--item--qtarea button {
+    border:0;
+    background-color:transparent;
+    font-size:17px;
+    outline:0;
+    cursor:pointer;
+    padding:0px 10px;
+    color:#333;
+}
+.cart--item--qt {
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 5px;
+    color:#000;
+}
+.cart--totalitem {
+    padding:15px 0;
+    border-top:1px solid #79b9dd;
+    color:#315970;
+    display:flex;
+    justify-content: space-between;
+    font-size:15px;
+}
+.cart--totalitem span:first-child {
+    font-weight: bold;
+}
+.cart--totalitem.big {
+    font-size:20px;
+    color:#000;
+    font-weight: bold;
+}
+.cart--finalizar {
+    padding:20px 30px;
+    border-radius:20px;
+    background-color:#48d05f;
+    color:#FFF;
+    cursor:pointer;
+    text-align:center;
+    margin-top:20px;
+    border:2px solid #63f77c;
+    transition: all ease .2s;
+}
+.cart--finalizar:hover {
+    background-color:#35af4a;
+}
+/** PIZZA CARD TO BUY ======================================================================================== */
 .pizzaWindowArea {
     position:fixed;
     left:0;
@@ -261,75 +332,8 @@ h1 {
     line-height: 40px;
     margin-bottom:30px;
 }
-.cart {
-    margin-bottom:20px;
-}
-.cart--item {
-    display:flex;
-    align-items:center;
-    margin:10px 0;
-}
-.cart--item img {
-    width:40px;
-    height:40px;
-    margin-right:20px;
-}
-.cart--item-nome {
-    flex:1;
-}
-.cart--item--qtarea {
-    display:inline-flex;
-    background-color:#EEE;
-    border-radius:10px;
-    height:30px;
-}
-.cart--item--qtarea button {
-    border:0;
-    background-color:transparent;
-    font-size:17px;
-    outline:0;
-    cursor:pointer;
-    padding:0px 10px;
-    color:#333;
-}
-.cart--item--qt {
-    line-height: 30px;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 0px 5px;
-    color:#000;
-}
-.cart--totalitem {
-    padding:15px 0;
-    border-top:1px solid #79b9dd;
-    color:#315970;
-    display:flex;
-    justify-content: space-between;
-    font-size:15px;
-}
-.cart--totalitem span:first-child {
-    font-weight: bold;
-}
-.cart--totalitem.big {
-    font-size:20px;
-    color:#000;
-    font-weight: bold;
-}
-.cart--finalizar {
-    padding:20px 30px;
-    border-radius:20px;
-    background-color:#48d05f;
-    color:#FFF;
-    cursor:pointer;
-    text-align:center;
-    margin-top:20px;
-    border:2px solid #63f77c;
-    transition: all ease .2s;
-}
-.cart--finalizar:hover {
-    background-color:#35af4a;
-}
 
+/* RESPONSIVE AREA ====================================================================================== */
 @media (max-width:1000px) {
     .pizza-area {
         grid-template-columns: repeat(2, 1fr);
