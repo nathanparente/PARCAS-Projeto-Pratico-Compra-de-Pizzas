@@ -87,7 +87,7 @@ header {
     top:0;
     right:0;
     height:60px;
-    background-color:#399ade;
+    background-color:#b26d13;
     display:none;
     justify-content: flex-end;
     align-items: center;
@@ -95,7 +95,7 @@ header {
 .menu-openner {
     margin-right: 15px;
     font-size: 26px;
-    background-color: #a9dcff;
+    background-color: #da8d28;
     padding: 5px 20px;
     border-radius: 5px;
 }
