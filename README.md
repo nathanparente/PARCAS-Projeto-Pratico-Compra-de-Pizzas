@@ -26,7 +26,8 @@ com as funções de escolher o sabor da pizza, o tamanho e a quantidade. Também
 [![JAVASCRIPT](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 
-## 🖥 Link to access the site 
+## 🖥 Link to access the site
+https://nathanpizzasjs.netlify.app/
 
 
 <p align="center">Copyright © 2022 nathanparente</p>
