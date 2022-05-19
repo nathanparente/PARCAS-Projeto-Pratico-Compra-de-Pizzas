@@ -85,7 +85,7 @@ cs('.pizzaInfo--size').forEach((size, sizeIndex)=>{
 });
 
 c('.pizzaInfo--addButton').addEventListener('click', ()=>{
-    let size = c('.pizzaInfo--size.selected').getAttribute('data-key');
+    let size = parseInt(c('.pizzaInfo--size.selected').getAttribute('data-key'));
     let identifier = pizzaJson[modalKey].id+'@'+size;
     let key = cart.findIndex((item)=>item.identifier == identifier);
     if(key > -1){
@@ -141,4 +141,4 @@ function updateCart(){
     } else {
         c('aside').classList.remove('show');
     }
-}
+};
